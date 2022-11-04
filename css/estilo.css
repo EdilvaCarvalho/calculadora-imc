@@ -1,0 +1,140 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+header {
+	padding: 5px 0;
+	background: #ffcbdb;
+}
+
+.box {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulos {
+	text-align: center;
+	font-size: 2em;
+}
+
+form {
+	width: 50%;
+	margin: 20px auto;
+}
+
+#resultado {
+	text-align: center;
+	font-weight: bold;
+	color: #ff8a9d;
+}
+
+form h2 {
+	text-align: center;
+	font-size: 1.8em;
+	color: #ff8a9d;
+}
+
+.grupo {
+	display: inline-block;
+}
+
+label {
+	display: block;
+	margin: 0 0 5px;
+	font-size: 20px;
+}
+
+table {
+	width: 600px;
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+
+thead {
+	background:  #ff8a9d;
+	color: white;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: 8px 15px;
+	font-size: 18px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 10px;
+	padding: 10px 25px;
+	width: 100%;
+	border-color: #ff8a9d;
+	box-sizing: border-box;
+}
+
+.input-medio {
+	display: inline-block;
+	margin: 0 0 10px;
+	padding: 10px 25px;
+	width: 100%;
+	border-color: #ff8a9d;
+	box-sizing: border-box;
+}
+
+.grupo{
+	width: 49.5%;
+	display: inline-block;
+}
+
+.botao {
+	background: #ff8a9d;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 25px;
+}
+
+.botao:hover {
+	background: #FF1493;
+	transition: 1s background;
+	cursor: pointer;
+}
+
+#mensagens-erro {
+	color: red;
+}
+
+.animacao {
+	opacity: 0;
+	transition: 1s;
+}
+
+.invisivel {
+	display: none;
+}
+
+footer img {
+	width: 10%;
+	padding-top: 20px;
+}
+
+footer {
+	text-align: center;
+	background: #ffcbdb;
+	width: 100%;
+	position: absolute;
+	margin-top: auto;
+}
+
+footer p {
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	padding: 20px;
+}

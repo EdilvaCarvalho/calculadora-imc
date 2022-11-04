@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora IMC</title>
+        <link rel="icon" type="image/x-icon" href="img/maca.png">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="box">
+                <h2 class="titulo-principal">IMC (Índice de Massa Corporal)</h2>
+            </div>
+        </header>
+        <main>
+            <section class="box">
+                <h2 class="titulos">Calculadora IMC</h2>
+                <ul id="mensagens-erro">
+
+                </ul>
+                <form id="form">
+                    <div class="">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" name="nome" type="text" placeholder="Digite o seu nome" class="input-padrao" onfocus="myFunction(this)">
+                    </div>
+                    <div class="grupo">
+                        <label for="peso">Peso:</label>
+                        <input id="peso" name="peso" type="number" placeholder="Digite o seu peso" class="input-medio" onfocus="myFunction(this)">
+                    </div>
+                    <div class="grupo">
+                        <label for="altura">Altura:</label>
+                        <input id="altura" name="altura" type="number" placeholder="Digite a sua altura" class="input-medio" onfocus="myFunction(this)">
+                    </div>
+                    <button id="calcular" class="botao">Calcular</button>
+                </form>
+                <p id="resultado"></p>
+            </section>
+            <section class="box">
+                <h2 class="titulos">Classificação de peso pelo IMC para adultos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IMC</th>
+                            <th>Classificação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-imc">
+                        <tr class="indice" id="baixo-peso">
+                            <td class="imc">Menor que 18.5</td>
+                            <td class="classificacao">Baixo peso</td>
+                        </tr>
+                        <tr class="indice" id="peso-normal">
+                            <td class="imc">Entre 18,5 e 24,9</td>
+                            <td class="classificacao">Peso normal</td>
+                        </tr>
+                        <tr class="indice" id="excesso-peso">
+                            <td class="imc">Entre 25,0 e 29,9</td>
+                            <td class="classificacao">Excesso de peso</td>
+                        </tr>
+                        <tr class="indice" id="obesidade-1">
+                            <td class="imc">Entre 30,0 e 34,9</td>
+                            <td class="classificacao">Obesidade de Classe 1</td>
+                        </tr>
+                        <tr class="indice" id="obesidade-2">
+                            <td class="imc">Entre 35,0 e 39,9</td>
+                            <td class="classificacao">Obesidade de Classe 2</td>
+                        </tr>
+                        <tr class="indice" id="obesidade-3">
+                            <td class="imc">Maior ou igual a 40,0</td>
+                            <td class="classificacao">Obesidade de Classe 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Copyright Calculadora IMC (Índice de Massa Corporal) - 2022</p>
+        </footer>
+        <script src="js/calcula-imc.js"></script>
+    </body>
+</html>
